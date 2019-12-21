@@ -5,10 +5,10 @@
 성능이나 기타문제를 체크해볼수 용도입니다  
 
 웹사이트 테스트 용도로만 사용하시기를 권고드립니다  
-
-
+  
+  
 ![](https://devhkd.github.io/autoF5.js/temp/(19-12-22)01.png)  
-( △ 페이지 스크린샷)  
+( 페이지 스크린샷 )  
   
   
 동작 웹페이지 : https://devhkd.github.io/autoF5.js/   
