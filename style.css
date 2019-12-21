@@ -1,5 +1,5 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css');
-body { padding-top:35px; font-size:13px; overflow-x:hidden; }
+body { padding:35px 5px;; font-size:13px; overflow-x:hidden; }
 #wrap { width:100%; text-align:center; }
 #container { width:550px; margin:0 auto; text-align:left; }
 *:focus { outline: none; }
