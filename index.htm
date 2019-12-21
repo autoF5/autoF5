@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto F5 (웹사이트 다중접속기)</title>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="./style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div id="wrap">
+<div id="container">
+<span id="headtxt">
+<a href="https://jsfiddle.net/temp191219/2epkfbjm/" target="_top">
+<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> Auto F5 (웹사이트 다중접속기) ver0.18
+</a>
+</span>
+<hr size="1" />
+<div id="toppart_txt">
+▼ 사이트 주소입력 <span class="ex">( ex. http://abcde123456.com/ )</span> 
+</div> 
+<div id="toppart_btn_area">
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="iframeToggle">
+        <label class="onoffswitch-label" for="iframeToggle">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+</div><br />
+<input type="text" class="targetUrlform" id="targetUrlVal_1" size="70" />
+<button type="button" class="btn btn-info btn-xs" id="btn_add" onfocus="this.blur()">+</button>
+<div id="multiUrlArea"></div>
+ᛝ 대기시간 
+<input type="text" id="repeatTime" size="4" value="500" /> 
+<span class="ex"> ms &nbsp;&nbsp; ( ex. 1000는 1초 대기, 500은 0.5초 대기후 동작 / 짧을수록 빠름 )</span>
+<br />
+<div id="counter"></div>
+<button type="button" id="btn_start" class="btn btn-success" onfocus="this.blur()">START</button>
+<button type="button" id="btn_stop" class="btn btn-primary" onfocus="this.blur()">STOP</button>
+<button type="button" id="btn_reset" class="btn btn-danger" onfocus="this.blur()">RESET</button>
+<hr size="1" />
+<div id="notice">
+현재 동작 안내 : <span id="msg">"주소 입력을 대기중입니다..."</span><br />
+현재 타겟 주소 : <span id="targetVal"></span><br />
+현재 반복 횟수 : <span id="countVal"></span>
+</div>
+<hr size="1" />
+<span class="ex2"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp;2019-12-21 기준 정상사용 가능합니다 ( v0.18 / js md5:115eee6f571c08664e70fe56545ca3bc )</span><br>
+<span class="ex2"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp;본 새로고침기는 동작하는 컴퓨터와 브라우저의 영향을 받습니다. <b><a href="https://www.google.com/intl/ko/chrome/" target="_blank">크롬브라우저</a></b> 사용을 추천합니다</span><br>
+<span class="ex2"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp;검색기능이 포함된 페이지에 사용하여 부하성능을 더 테스트할수 있습니다</span><br>
+<span class="ex2"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp;내부에서 새로고침이 진행되며 크롬에서는 F12키 > Network 에서 상세헤더 확인이 가능합니다</span><br>
+<span class="ex2"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp;이미지 형태로 우회하기에 F12에서 확인시 수신데이터양이 0 일수 있습니다.</span><br>
+<span class="ex2"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp;몇몇사이트에서는 방어동작 적용으로 해당 사이트 접근이 차단될수 있습니다</span><br>
+<img src="https://www.cutercounter.com/hits.php?id=hxdddad&nd=6&style=32" id="imgCounter" />
+<div id="work_area"></div>
+</div>
+</div>
+<script type="text/javascript" src="./autoF5main.js"></script>
+</body>
+</html>
