@@ -8,11 +8,12 @@
 
 
 ![](https://devhkd.github.io/autoF5.js/temp/(19-12-22)01.png)  
-ㄴ 페이지 스크린샷
-
-
-동작 웹페이지 : https://devhkd.github.io/autoF5.js/ 
-
-jsfiddle(소스확인 및 동작) : https://jsfiddle.net/temp191219/2epkfbjm/
-
-문의 : autof5@protonmail.com
+( △ 페이지 스크린샷)
+  
+  
+동작 웹페이지 : https://devhkd.github.io/autoF5.js/   
+  
+jsfiddle(소스확인 및 동작) : https://jsfiddle.net/temp191219/2epkfbjm/  
+  
+문의 : autof5@protonmail.com  
+  
