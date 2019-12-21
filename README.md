@@ -1,2 +1,2 @@
-# autoF5
+# autoF5 (ver0.18) 
 AutoF5 (웹사이트 다중접속기)
