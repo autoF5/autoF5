@@ -6,6 +6,7 @@
 
 
 ![](https://devhkd.github.io/autoF5.js/temp/(19-12-22)01.png)
+ㄴ 페이지 스크린샷
 
 
 동작 웹페이지 : https://devhkd.github.io/autoF5.js/ 
