@@ -1,8 +1,10 @@
-rem <- 이것은 주석
-::: 2022-08-26 오전 11:53 금요일 청안동
+::: 2022-08-26 오전 11:53 금요일
 :::
-::
+:: 
+:: 
 
+:: git add --all
 git add -A
-git commit -m ["a"]
+git commit -m "auto push"
+::git push
 git push origin master
