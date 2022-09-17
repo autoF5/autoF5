@@ -6,14 +6,14 @@ ver0.10 : 19-12-20 개발시작
 ver0.16 : 19-12-21 멀티주소 사용가능
 ver0.17 : 19-12-21 아이프레임 적용
 ver0.18 : 19-12-21 방문자카운터, 아이프레임 자동삭제기능
+ver0.19 : 22-09-17 소스코드 기본사항 수정
 */
-var timerid_1; 		// 타이머함수 저장용 
-var time 			= 500; 	// 반복시간 (동작주기)
-var loop_count 		= 0; 	// 현재 동작 횟수
-var addUrl_count 	= 1;
-var iframeVer 		= 0;
-var iframeCount 	= 0;
-console.log(1);
+let timerid_1; 		// 타이머함수 저장용 
+let time 			= 500; 	// 반복시간 (동작주기)
+let loop_count 		= 0; 	// 현재 동작 횟수
+let addUrl_count 		= 1;
+let iframeVer 		= 0;
+let iframeCount		= 0;
 function clear(workUrl, i) 
 {
     $("#work_area").css({
@@ -25,11 +25,11 @@ function clear(workUrl, i)
 
 function start()
 {
-	for(var i=1;i<addUrl_count+1;i++)
-    {
-        var workUrl = $('#targetUrlVal_'+i).val();
-        detailWork(workUrl, i);
-    }
+	for(let i=1;i<addUrl_count+1;i++)
+	{
+		let workUrl = $('#targetUrlVal_'+i).val();
+		detailWork(workUrl, i);
+	}
 }
 
 function detailWork(workUrl, i) 
@@ -40,9 +40,9 @@ function detailWork(workUrl, i)
         return false;
     }
     
-    var randNum = (Math.floor(Math.random() * 1000000) + 1);
-    var tempUrl = workUrl + '?' + randNum;
-    var setTime = $('#repeatTime').val();
+    let randNum = (Math.floor(Math.random() * 1000000) + 1);
+    let tempUrl = workUrl + '?' + randNum;
+    let setTime = $('#repeatTime').val();
     if (!setTime) 
     {
         msg('<b>(ERROR) 재반복시간이 입력되지않았습니다</b>');
@@ -106,29 +106,29 @@ function msg(txt)
 function stop() 
 {
 	for(var i=1;i<addUrl_count+1;i++)
-    {
-        eval("clearTimeout(timerid_"+i+")");
-    }
-    loop_count = 0;
-    msg('현재 모든 동작 중지되었습니다.');
+	{
+		eval("clearTimeout(timerid_"+i+")");
+	}
+	loop_count = 0;
+	msg('현재 모든 동작 중지되었습니다.');
 }
 
 function reset() 
 {
-    $('#countVal').html('');
+	$('#countVal').html('');
 	for(var i=1;i<addUrl_count+1;i++)
-    {
-        eval("clearTimeout(timerid_"+i+")");
-    }
-    loop_count = 0;
-    addUrl_count = 1;
-    msg('"주소 입력을 대기중입니다..."');
-    $('#targetUrlVal').val('');
-    $('#targetVal').html('');
-    $('#repeatTime').val(500);
-    $('#multiUrlArea').html('');
-    $('#work_area').html('');
-    iframeCount = 0;
+	{
+	eval("clearTimeout(timerid_"+i+")");
+	}
+	loop_count = 0;
+	addUrl_count = 1;
+	msg('"주소 입력을 대기중입니다..."');
+	$('#targetUrlVal').val('');
+	$('#targetVal').html('');
+	$('#repeatTime').val(500);
+	$('#multiUrlArea').html('');
+	$('#work_area').html('');
+	iframeCount = 0;
 }
 
 function addUrl()
